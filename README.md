@@ -6,5 +6,5 @@ Live demo: https://keen-gates-5ba73f.netlify.app/
 
 
 
-1 - Mockup
-![Random-simpsons](https://s7.gifyu.com/images/chrome-capturef843d5f4e844b979.gif)
+
+
