@@ -7,10 +7,10 @@ const Card = () => {
   const [gif, setGif] = useState("");
   const [fetching, setFetching] = useState(false);
 
-  const share = () => {
-    const url = 'https://www.twitter.com?';
-    window.open(url, '_blank');
-}
+//   const share = () => {
+//     const url = 'https://www.twitter.com?';
+//     window.open(url, '_blank');
+// }
 
 
   useEffect(() => {
@@ -32,7 +32,7 @@ const Card = () => {
       {<img src={`${gif}`} alt="" width="450px" height="400px" />}
       <p onClick={() => setFetching(!fetching)}>Another gif!</p>
       <br></br>
-      <div className="share">
+      {/* <div className="share">
         
         
       <div class='item'>
@@ -45,8 +45,8 @@ const Card = () => {
 
         <FacebookIcon size={64} round={false} borderRadius={7} />
       </div>
-     
       </div>
+      */}
     </div>
   );
 };
