@@ -1,16 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./Card.css";
 import axios from "axios";
-import { TwitterIcon, FacebookIcon } from "react-share";
+
 
 const Card = () => {
   const [gif, setGif] = useState("");
   const [fetching, setFetching] = useState(false);
 
-//   const share = () => {
-//     const url = 'https://www.twitter.com?';
-//     window.open(url, '_blank');
-// }
 
 
   useEffect(() => {
@@ -32,21 +28,7 @@ const Card = () => {
       {<img src={`${gif}`} alt="" width="450px" height="400px" />}
       <p onClick={() => setFetching(!fetching)}>Another gif!</p>
       <br></br>
-      {/* <div className="share">
-        
-        
-      <div class='item'>
-
-        <TwitterIcon size={64} round={false} borderRadius={7} onClick={share}/>
-        <a target="_blank" class="twitter-share-button" href={`https://twitter.com/intent/tweet?text=+${gif}`}>ads</a>
-      </div>
-       
-      <div class='item'>
-
-        <FacebookIcon size={64} round={false} borderRadius={7} />
-      </div>
-      </div>
-      */}
+     
     </div>
   );
 };
