@@ -22,3 +22,12 @@
   img {
     margin-bottom: 15px;
   }
+
+.share {
+  display: flex;
+   
+}
+
+.item {
+  margin : 5px;
+}
